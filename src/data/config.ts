@@ -33,8 +33,8 @@ const config = {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    linkedin: "https://www.linkedin.com/in/Parthiban",
-    github: "https://github.com/Parthiban",
+    linkedin: "https://www.linkedin.com/in/partha0802/",
+    github: "https://github.com/Partha033",
   },
 };
 export { config };
