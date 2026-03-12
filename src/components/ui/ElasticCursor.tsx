@@ -49,7 +49,7 @@ function useInstance(value = {}) {
 // Function for Mouse Move Scale Change
 function getScale(diffX: number, diffY: number) {
   const distance = Math.sqrt(Math.pow(diffX, 2) + Math.pow(diffY, 2));
-  return Math.min(distance / 735, 0.35);
+  return Math.min(distance / 1500, 0.15);
 }
 
 // Function For Mouse Movement Angle in Degrees
@@ -200,21 +200,20 @@ function ElasticCursor() {
         ref={jellyRef}
         id={"jelly-id"}
         className={cn(
-          `w-[${CURSOR_DIAMETER}px] h-[${CURSOR_DIAMETER}px] border-2 border-black dark:border-white`,
-          "jelly-blob fixed left-0 top-0 rounded-lg z-[999] pointer-events-none will-change-transform",
+          `w-[${CURSOR_DIAMETER}px] h-[${CURSOR_DIAMETER}px] bg-transparent dark:bg-transparent rounded-full`,
+          "jelly-blob fixed left-0 top-0 rounded-full z-[999] pointer-events-none will-change-transform",
           "translate-x-[-50%] translate-y-[-50%]"
         )}
         style={{
           zIndex: 100,
-          backdropFilter: "invert(100%)",
+          boxShadow: "0 0 20px 5px rgba(255, 255, 2550, 0, 0, 0.5)",
         }}
       ></div>
       <div
-        className="w-3 h-3 rounded-full fixed translate-x-[-50%] translate-y-[-50%] pointer-events-none transition-none duration-300"
+        className="w-2 h-2 rounded-full bg-white fixed translate-x-[-50%] translate-y-[-50%] pointer-events-none transition-none duration-300"
         style={{
           top: y,
           left: x,
-          backdropFilter: "invert(100%)",
         }}
       ></div>
     </>

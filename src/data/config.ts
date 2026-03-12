@@ -1,45 +1,40 @@
 const config = {
-  title: "Naresh Khatri | Full-Stack Developer",
+  title: "Parthiban | MERN Stack Developer",
   description: {
-    long: "Explore the portfolio of Naresh, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+    long: "Passionate MERN Stack Developer with hands-on experience in building scalable, responsive web applications. Skilled in MongoDB, Express.js, React.js, and Node.js, with expertise in Redux, GraphQL, and Tailwind CSS for efficient frontend development. Proficient in Git/GitHub for version control, with a track record of optimizing application performance (+30%) and reducing deployment times (25%). Committed to continuous learning, delivering clean code, and collaborating effectively in Agile teams.",
     short:
-      "Discover the portfolio of Naresh, a full-stack developer creating interactive web experiences and innovative projects.",
+      "A MERN stack developer with expertise in building scalable and responsive web applications.",
   },
   keywords: [
-    "Naresh",
+    "Parthiban",
     "portfolio",
-    "full-stack developer",
-    "creative technologist",
-    "web development",
-    "3D animations",
-    "interactive websites",
-    "Coding Ducks",
-    "The Booking Desk",
-    "Ghostchat",
-    "web design",
-    "GSAP",
-    "React",
-    "Next.js",
-    "Spline",
-    "Framer Motion",
+    "MERN stack developer",
+    "MongoDB",
+    "Express.js",
+    "React.js",
+    "Node.js",
+    "GraphQL",
+    "Redux",
+    "Tailwind CSS",
+    "JAVA",
+    "HTML",
+    "CSS",
+    "JavaScript",
   ],
-  author: "Naresh Khatri",
-  email: "naresh.khatri2345@gmail.com",
+  author: "PARTHIBAN.A",
+  email: "parthibanalaraj@gmail.com",
   site: "https://nareshkhatri.site",
 
   // for github stars button
-  githubUsername: "naresh-khatri",
+  githubUsername: "Parthiban",
   githubRepo: "3d-portfolio",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/nothotchaddi",
-    linkedin: "https://www.linkedin.com/in/naresh-khatri/",
-    instagram: "https://www.instagram.com/hotchaddi",
-    facebook: "https://www.facebook.com/HotChaddi/",
-    github: "https://github.com/Naresh-Khatri",
+    linkedin: "https://www.linkedin.com/in/Parthiban",
+    github: "https://github.com/Parthiban",
   },
 };
 export { config };

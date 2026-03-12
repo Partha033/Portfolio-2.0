@@ -9,6 +9,7 @@ import {
   FaGit,
   FaGithub,
   FaHtml5,
+  FaJava,
   FaLinkedin,
   FaLinux,
   FaNodeJs,
@@ -25,10 +26,12 @@ import {
 } from "react-icons/ri";
 import {
   SiExpress,
+  SiGraphql,
   SiJavascript,
   SiKubuntu,
   SiPm2,
   SiPrettier,
+  SiRedux,
   SiTypescript,
   SiVercel,
   SiVscodium,
@@ -43,187 +46,27 @@ import { TbTerminal2 } from "react-icons/tb";
 const CONTACT_LINKS = [
   {
     name: "Email",
-    content: "naresh.khatri2345@gmail",
-    href: "mailto:naresh.khatri2345@gmail.com",
+    content: "parthibanalaraj@gmail.com",
+    href: "mailto:parthibanalaraj@gmail.com",
     icon: <FaEnvelope height={"50px"} />,
   },
   {
     name: "Phone",
-    content: "1234567890",
-    href: "tel:1234567890",
+    content: "9344619085",
+    href: "tel:9344619085",
     icon: <FaPhone height={"50px"} />,
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/naresh-khatri/",
-    content: "/naresh-khatri",
+    href: "https://www.linkedin.com/in/Parthiban",
+    content: "/Parthiban",
     icon: <FaLinkedin height={"50px"} />,
   },
   {
     name: "GitHub",
-    href: "https://github.com/Naresh-Khatri",
-    content: "/naresh-khatri",
+    href: "https://github.com/Parthiban",
+    content: "/Parthiban",
     icon: <FaGithub height={"50px"} />,
-  },
-];
-
-const TOOLS = [
-  {
-    name: "JavaScript",
-    content: "JavaScript is a high-level, interpreted programming language",
-    icon: <SiJavascript size={"50px"} color={"#f0db4f"} />,
-    color: "#f0db4f",
-  },
-  {
-    name: "TypeScript",
-    content: "TypeScript is a superset of JavaScript that compiles to plain JS",
-    icon: <SiTypescript size={"50px"} color={"#007acc"} />,
-    color: "#007acc",
-  },
-  {
-    name: "HTML",
-    content: "Next.js is a React framework for production",
-    icon: <FaHtml5 size={"50px"} color="#e34c26" />,
-    color: "#e34c26",
-  },
-  {
-    name: "CSS",
-    content: "Next.js is a React framework for production",
-    icon: <FaCss3 size={"50px"} color="#563d7c" />,
-    color: "#563d7c",
-  },
-  {
-    name: "Nodejs",
-    content: "Next.js is a React framework for production",
-    icon: <FaNodeJs size={"50px"} color="#6cc24a" />,
-    color: "#6cc24a",
-  },
-  {
-    name: "React.js",
-    content: "Next.js is a React framework for production",
-    icon: <FaReact size={"50px"} color="#61dafb" />,
-    color: "#61dafb",
-  },
-  {
-    name: "Docker",
-    content: "Next.js is a React framework for production",
-    icon: <FaDocker size={"50px"} color="#2496ed" />,
-    color: "#2496ed",
-  },
-  {
-    name: "NginX",
-    content: "Next.js is a React framework for production",
-    icon: <DiNginx size={"50px"} color="#008000" />,
-    color: "#008000",
-  },
-  {
-    name: "Vue.js",
-    content: "Next.js is a React framework for production",
-    icon: <FaVuejs size={"50px"} color="#41b883" />,
-    color: "#41b883",
-  },
-  {
-    name: "Express.js",
-    content: "Next.js is a React framework for production",
-    icon: <SiExpress size={"50px"} color="#fff" />,
-    color: "#000000",
-  },
-  {
-    name: "PostgreSQL",
-    content: "Next.js is a React framework for production",
-    icon: <DiPostgresql size={"50px"} color="#336791" />,
-    color: "#336791",
-  },
-  {
-    name: "MongoDB",
-    content: "Next.js is a React framework for production",
-    icon: <DiMongodb size={"50px"} color="#4db33d" />,
-    color: "#4db33d",
-  },
-  {
-    name: "Tailwind CSS",
-    content: "Next.js is a React framework for production",
-    icon: <RiTailwindCssFill size={"50px"} color="#06b6d4" />,
-    color: "#06b6d4",
-  },
-  {
-    name: "Firebase",
-    content: "Next.js is a React framework for production",
-    icon: <RiFirebaseFill size={"50px"} color="#FFCA28" />,
-    color: "#FFCA28",
-  },
-  {
-    name: "Git",
-    content: "Next.js is a React framework for production",
-    icon: <FaGit size={"50px"} color="#f05032" />,
-    color: "#f05032",
-  },
-  {
-    name: "GitHub",
-    content: "Next.js is a React framework for production",
-    icon: <FaGithub size={"50px"} color="#fff" />,
-    color: "#000000",
-  },
-  {
-    name: "VS Code",
-    content: "Next.js is a React framework for production",
-    icon: <SiVscodium size={"50px"} color="#007acc" />,
-    color: "#007acc",
-  },
-  {
-    name: "VIM",
-    content: "Next.js is a React framework for production",
-    icon: <DiVim size={"50px"} color="#fff" />,
-    color: "#000000",
-  },
-  {
-    name: "Prettier",
-    content: "Next.js is a React framework for production",
-    icon: <SiPrettier size={"50px"} color="#f7b93c" />,
-    color: "#f7b93c",
-  },
-  {
-    name: "NPM",
-    content: "Next.js is a React framework for production",
-    icon: <DiNpm size={"50px"} color="#CB3837" />,
-    color: "#CB3837",
-  },
-  {
-    name: "Yarn",
-    content: "Next.js is a React framework for production",
-    icon: <FaYarn size={"50px"} color="#2C8EBB" />,
-    color: "#2C8EBB",
-  },
-  {
-    name: "Vercel",
-    content: "Next.js is a React framework for production",
-    icon: <SiVercel size={"50px"} color="#fff" />,
-    color: "#000000",
-  },
-  {
-    name: "Linux",
-    content: "Next.js is a React framework for production",
-    icon: <FaLinux size={"50px"} color="#fff" />,
-    color: "#000000",
-  },
-  {
-    name: "Kubuntu",
-    content: "Next.js is a React framework for production",
-    // give me correct color for  kubuntu
-    icon: <SiKubuntu size={"50px"} color="#0077C4" />,
-    color: "#000000",
-  },
-  {
-    name: "Terminal",
-    content: "Next.js is a React framework for production",
-    icon: <TbTerminal2 size={"50px"} color="#fff" />,
-    color: "#000000",
-  },
-  {
-    name: "AWS",
-    content: "Next.js is a React framework for production",
-    icon: <FaAws size={"50px"} color="#3f51b5" />,
-    color: "#000000",
   },
 ];
 
@@ -251,9 +94,9 @@ function Page() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:items-center ml-10 md:ml-20 lg:ml-0">
-                <p className="text-center text-xl">Naresh Khatri</p>
+                <p className="text-center text-xl">Parthiban.a</p>
                 <div className="text-xs bg-zinc-700 w-fit px-3 py-1 rounded-full">
-                  Web Developer
+                  MERN Stack Developer
                 </div>
               </div>
             </div>
@@ -287,16 +130,7 @@ function Page() {
           >
             <h1 className="text-3xl mb-10 lg:md-20">About me</h1>
             <p className="mb-10 text-roboto">
-              Hey there! I&apos;m Naresh, a Fullstack developer passionate about
-              creating meaningful digital experiences. With great in Web
-              development, I thrive on turning ideas into reality through coding
-              and design. My journey began with a fascination for technology and
-              a drive to make a positive impact.
-            </p>
-            <p className="mb-10">
-              When I&apos;m not coding, you can find me [Your
-              Interests/Hobbies], exploring new technologies, or sipping coffee
-              while brainstorming my next project.
+            Passionate MERN Stack Developer with hands-on experience in building scalable, responsive web applications. Skilled in MongoDB, Express.js, React.js, and Node.js, with expertise in Redux, GraphQL, and Tailwind CSS for efficient frontend development. Proficient in Git/GitHub for version control, with a track record of optimizing application performance (+30%) and reducing deployment times (25%). Committed to continuous learning, delivering clean code, and collaborating effectively in Agile teams.
             </p>
             <h1 className="text-3xl mb-10 lg:md-20">Stuff I use</h1>
             <div className="mb-5">
@@ -318,7 +152,50 @@ function Page() {
                   }}
                   aria-label="My Favorite Images"
                 >
-                  {TOOLS.reverse().map((tool) => (
+                  {[{
+    name: "Java",
+    icon: <FaJava size={"50px"} color={"#f0db4f"} />,
+  },
+  {
+    name: "HTML",
+    icon: <FaHtml5 size={"50px"} color="#e34c26" />,
+  },
+  {
+    name: "CSS",
+    icon: <FaCss3 size={"50px"} color="#563d7c" />,
+  },
+  {
+    name: "JavaScript",
+    icon: <SiJavascript size={"50px"} color={"#f0db4f"} />,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: <RiTailwindCssFill size={"50px"} color="#06b6d4" />,
+  },
+  {
+    name: "Redux",
+    icon: <SiRedux size={"50px"} color={"#764abc"} />,
+  },
+  {
+    name: "GraphQL",
+    icon: <SiGraphql size={"50px"} color={"#e10098"} />,
+  },
+  {
+    name: "React.js",
+    icon: <FaReact size={"50px"} color="#61dafb" />,
+  },
+  {
+    name: "MongoDB",
+    icon: <DiMongodb size={"50px"} color="#4db33d" />,
+  },
+  {
+    name: "Git",
+    icon: <FaGit size={"50px"} color="#f05032" />,
+  },
+  {
+    name: "GitHub",
+    icon: <FaGithub size={"50px"} color="#fff" />,
+  },].reverse().map((tool) => (
                     <SplideSlide key={tool.name}>
                       <div
                         key={tool.name}
