@@ -1,4 +1,4 @@
-const transition = { duration: 1, ease: [0.76, 0, 0.24, 1] };
+const transition = { duration: 1, ease: [0.76, 0, 0.24, 1] as const };
 
 export const opacity = {
   initial: {
