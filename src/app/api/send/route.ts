@@ -20,7 +20,6 @@ export async function POST(req: Request) {
 
     const resend = new Resend(resendApiKey);
     const body = await req.json();
-    console.log(body);
     const {
       success: zodSuccess,
       data: zodData,
