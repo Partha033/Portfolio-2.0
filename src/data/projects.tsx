@@ -167,7 +167,7 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiFirebase />,
   },
-  sockerio: {
+  socketio: {
     title: "Socket.io",
     bg: "black",
     fg: "white",
@@ -259,7 +259,7 @@ export type Project = {
   src: string;
   screenshots: string[];
   skills: { frontend: Skill[]; backend: Skill[] };
-  content: React.ReactNode | any;
+  content: React.ReactNode;
   github?: string;
   live?: string;
 };
