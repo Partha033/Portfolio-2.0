@@ -6,7 +6,7 @@ const config = {
       "A MERN stack developer with expertise in building scalable and responsive web applications.",
   },
   keywords: [
-    "Parthiban",
+    "Partha",
     "portfolio",
     "MERN stack developer",
     "MongoDB",
