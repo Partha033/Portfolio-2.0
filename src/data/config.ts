@@ -23,7 +23,7 @@ const config = {
   ],
   author: "PARTHIBAN.A",
   email: "parthibanalaraj@gmail.com",
-  site: "https://nareshkhatri.site",
+  site: "",
 
   // for github stars button
   githubUsername: "Parthiban",
