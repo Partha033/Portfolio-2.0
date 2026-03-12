@@ -28,6 +28,7 @@ export default function Body({
 }: BodyProps) {
   const params = useParams();
   const [currentHref, setCurrentHref] = useState("/");
+
   useEffect(() => {
     if (typeof window === "undefined") return;
     const { pathname, hash } = window.location;
@@ -59,7 +60,6 @@ export default function Body({
       <FunnyThemeToggle className="w-6 h-6 mr-6 flex md:hidden" />
       {links.map((link, index) => {
         const { title, href, target } = link;
-
         return (
           <Link
             key={`l_${index}`}
