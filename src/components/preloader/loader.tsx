@@ -1,9 +1,11 @@
 "use client";
 import styles from "./style.module.scss";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { opacity, slideUp } from "./anim";
 import { usePreloader } from ".";
+
+const easeInOut = [0.76, 0, 0.24, 1] as const;
 
 export default function Loader() {
   const { loadingPercent } = usePreloader();
@@ -22,14 +24,14 @@ export default function Loader() {
     dimension.height
   } Q${dimension.width / 2} ${dimension.height} 0 ${dimension.height}  L0 0`;
 
-  const curve = {
+  const curve: Variants = {
     initial: {
       d: initialPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 0.7, ease: easeInOut },
     },
     exit: {
       d: targetPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 },
+      transition: { duration: 0.7, ease: easeInOut, delay: 0.3 },
     },
   };
 
